@@ -1,7 +1,7 @@
 import { GameScene } from './scenes/GameScene/GameScene.js';
 import { GameSceneHotLap } from './scenes/GameSceneHotlap/GameSceneHotlap.js';
 import { GameHud } from './scenes/GameHud/GameHud.js';
-import { PreLoader } from './scenes/Preloader/PreLoader.js';
+import { GamePreLoader } from './scenes/GamePreLoader/GamePreLoader.js';
 import { InputControl } from './scenes/InputControl/InputControl.js';
 import { TitleScreen } from './scenes/Menus/TitleScreen.js';
 import { Menu } from './scenes/Menus/Menu.js';
@@ -19,7 +19,7 @@ import { ComingSoon } from './scenes/Menus/ComingSoon.js';
 let gameScene = new GameScene();
 let gameSceneHotLap = new GameSceneHotLap();
 let gameHud = new GameHud();
-let preLoader = new PreLoader();
+let gamePreLoader = new GamePreLoader();
 let inputControl = new InputControl();
 let titleScreen = new TitleScreen();
 let singlePlayerMenu = new Menu({ name: 'SinglePlayerMenu', menuContent: singlePlayerMenuContent });
@@ -67,7 +67,7 @@ game.scene.add('GameScene', gameScene);
 game.scene.add('GameSceneHotlap', gameSceneHotLap);
 game.scene.add('GameHud', gameHud);
 game.scene.add('TitleScene', titleScreen);
-game.scene.add('PreLoader', preLoader);
+game.scene.add('GamePreLoader', gamePreLoader);
 game.scene.add('SinglePlayerMenu', singlePlayerMenu);
 game.scene.add('LocalMultiplayerMenu', localMultiplayerMenu);
 game.scene.add('OnlineMultiplayerMenu', onlineMultiplayerMenu);
@@ -76,5 +76,5 @@ game.scene.add('SelectTrack', selectTrack);
 game.scene.add('SelectCar', selectCar);
 game.scene.add('ComingSoon', comingSoon);
 
-game.scene.start('PreLoader');
+game.scene.start('GamePreLoader');
 

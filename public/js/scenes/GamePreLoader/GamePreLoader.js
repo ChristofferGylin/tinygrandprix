@@ -1,9 +1,9 @@
 import { gameSettings } from "../../gameSettings/gameSettings.js";
 
-export class PreLoader extends Phaser.Scene {
+export class GamePreLoader extends Phaser.Scene {
 
     constructor() {
-        super('PreLoader');
+        super('GamePreLoader');
     }
 
     preload() {
