@@ -1,0 +1,146 @@
+{
+	"textures": [
+		{
+			"image": "cars.png",
+			"format": "RGBA8888",
+			"size": {
+				"w": 102,
+				"h": 44
+			},
+			"scale": 1,
+			"frames": [
+				{
+					"filename": "adder.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 32,
+						"h": 32
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 6,
+						"w": 32,
+						"h": 21
+					},
+					"frame": {
+						"x": 1,
+						"y": 1,
+						"w": 32,
+						"h": 21
+					}
+				},
+				{
+					"filename": "loboretta.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 32,
+						"h": 32
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 6,
+						"w": 32,
+						"h": 21
+					},
+					"frame": {
+						"x": 35,
+						"y": 1,
+						"w": 32,
+						"h": 21
+					}
+				},
+				{
+					"filename": "rattler.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 32,
+						"h": 32
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 6,
+						"w": 32,
+						"h": 21
+					},
+					"frame": {
+						"x": 69,
+						"y": 1,
+						"w": 32,
+						"h": 21
+					}
+				},
+				{
+					"filename": "captain.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 32,
+						"h": 32
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 7,
+						"w": 32,
+						"h": 19
+					},
+					"frame": {
+						"x": 1,
+						"y": 24,
+						"w": 32,
+						"h": 19
+					}
+				},
+				{
+					"filename": "forratozza.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 32,
+						"h": 32
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 7,
+						"w": 32,
+						"h": 19
+					},
+					"frame": {
+						"x": 35,
+						"y": 24,
+						"w": 32,
+						"h": 19
+					}
+				},
+				{
+					"filename": "tassinGT.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 32,
+						"h": 32
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 8,
+						"w": 32,
+						"h": 16
+					},
+					"frame": {
+						"x": 69,
+						"y": 24,
+						"w": 32,
+						"h": 16
+					}
+				}
+			]
+		}
+	],
+	"meta": {
+		"app": "https://www.codeandweb.com/texturepacker",
+		"version": "3.0",
+		"smartupdate": "$TexturePacker:SmartUpdate:8adea103cda516b6bf5002d0f321859a:06929b62db95730b51d7a31bc9eaa404:76643c3195b82b5daf4c2278b6d42f60$"
+	}
+}
