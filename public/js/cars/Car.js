@@ -37,7 +37,7 @@ export class Car {
             synth: new EngineSynth(),
 
         };
-        this.tireSound = new Tone.Player('/assets/sounds/TireScreech.wav').toDestination();
+        //this.tireSound = new Tone.Player('/assets/sounds/TireScreech.wav').toDestination();
         this.slip = 0;
         this.throttle = 0;
         this.brake = 0;

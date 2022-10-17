@@ -3,6 +3,7 @@ import { GameSceneHotLap } from './scenes/GameSceneHotlap/GameSceneHotlap.js';
 import { GameHud } from './scenes/GameHud/GameHud.js';
 import { GamePreLoader } from './scenes/GamePreLoader/GamePreLoader.js';
 import { InputControl } from './scenes/InputControl/InputControl.js';
+import { ShowControls } from './scenes/ShowControls/ShowControls.js';
 import { TitleScreen } from './scenes/Menus/TitleScreen.js';
 import { Menu } from './scenes/Menus/Menu.js';
 import { Credits } from './scenes/Menus/credits.js';
@@ -21,6 +22,7 @@ let gameSceneHotLap = new GameSceneHotLap();
 let gameHud = new GameHud();
 let gamePreLoader = new GamePreLoader();
 let inputControl = new InputControl();
+let showControls = new ShowControls();
 let titleScreen = new TitleScreen();
 let singlePlayerMenu = new Menu({ name: 'SinglePlayerMenu', menuContent: singlePlayerMenuContent });
 let localMultiplayerMenu = new Menu({ name: 'LocalMultiplayerMenu', menuContent: localMultiplayerMenuContent });
@@ -44,6 +46,11 @@ const config = {
         gamepad: true
     },
     parent: 'gameContainer',
+    fps: {
+        target: 60,
+        forceSetTimeOut: true
+
+    },
     physics: {
         default: 'matter',
         matter: {
@@ -53,9 +60,7 @@ const config = {
             },
             gravity: false
         },
-        arcade: {
-            debug: false
-        }
+
     },
 
 
@@ -75,6 +80,7 @@ game.scene.add('Credits', credits);
 game.scene.add('SelectTrack', selectTrack);
 game.scene.add('SelectCar', selectCar);
 game.scene.add('ComingSoon', comingSoon);
+game.scene.add('ShowControls', showControls);
 
 game.scene.start('GamePreLoader');
 

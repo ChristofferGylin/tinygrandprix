@@ -13,7 +13,7 @@ export const singlePlayerMenuContent = {
             scene: 'SelectTrack',
             titleObject: null,
             displayTitle: 'SINGLE RACE',
-            data: { numberOfPlayers: 1 }
+            data: { numberOfPlayers: 1, hotlap: false }
         },
         {
             scene: 'SelectTrack',

@@ -60,8 +60,6 @@ export const setUpHUD = (game) => {
 
             let maxLaps;
 
-            console.log(game.gameConfig.hotlap)
-
             if (game.gameConfig.hotlap) {
 
                 maxLaps = '∞';

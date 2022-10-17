@@ -25,7 +25,6 @@ export const setUpGamePads = (playerNumber, scene) => {
                 console.log('Unknown Controller')
 
             }
-            console.log(scene);
 
         } else {
 

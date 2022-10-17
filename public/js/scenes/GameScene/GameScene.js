@@ -25,6 +25,9 @@ export class GameScene extends Phaser.Scene {
         this.inputControl = gameConfig.inputControl;
         this.raceSession = createNewSession(gameConfig.players, gameConfig.track, 6);
 
+        console.log('this.gameConfig from GameScene')
+        console.log(this.gameConfig)
+
     }
 
     preload() {
@@ -65,6 +68,8 @@ export class GameScene extends Phaser.Scene {
         let graphics = this.add.graphics({ lineStyle: { width: 2, color: 0xaa00aa } });
         console.log('this from gamescene')
         console.log(this)
+        console.log('this.raceSession from gamescene')
+        console.log(this.raceSession)
         // const lineMinLength = 15;
         // const lineMaxLength = 30;
         // const numberOfLines = 3
@@ -93,7 +98,8 @@ export class GameScene extends Phaser.Scene {
         // }
     }
 
-    update() {
+    update(time, delta) {
+
 
         // Timer total time
 

@@ -104,17 +104,17 @@ export class SelectCar extends Phaser.Scene {
 
                 if (this.currentPlayer + 1 === this.gameConfig.numberOfPlayers) {
 
-                    if (this.gameConfig.hotlap) {
+                    // if (this.gameConfig.hotlap) {
 
-                        this.scene.launch('GameSceneHotlap', this.gameConfig);
+                    //     this.scene.launch('GameSceneHotlap', this.gameConfig);
 
-                    } else {
+                    // } else {
 
-                        this.scene.launch(this.menuContent.menuItems[this.menuSelection].scene, this.gameConfig);
+                    //     this.scene.launch(this.menuContent.menuItems[this.menuSelection].scene, this.gameConfig);
 
-                    }
+                    // }
 
-
+                    this.scene.launch('ShowControls', this.gameConfig)
                     this.scene.stop(this.menuContent.sceneName);
 
                 } else {

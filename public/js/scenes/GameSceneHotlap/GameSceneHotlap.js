@@ -62,13 +62,9 @@ export class GameSceneHotLap extends Phaser.Scene {
         this.scene.launch('GameHud', this);
         this.inputControl.isInMenu = false;
         this.raceSession.isgameSceneReady = true;
-        console.log('this from gamescene')
-        console.log(this)
         this.bestLapTime = { time: undefined, carPosition: [] };
         this.currentFrame = 0;
         this.carPosition = [];
-
-        console.log('Hotlap!')
 
     }
 
